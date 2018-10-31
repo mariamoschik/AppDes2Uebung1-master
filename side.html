@@ -11,23 +11,41 @@
 
 
 <div id="header">
-    <h1><a href="index.html">iPhone App Seite 1</a></h1>
+    <h1><a href="index.html">eine App</a></h1>
 </div>
 
 <div id="menu">
     <ul>
-        <li><a href="index.html">Entry#1</a></li>
-        <li><a href="side.html">Entry#2</a></li>
+        <li><a href="index.html">ZURÜCK</a></li>
     </ul>
 </div>
 
-<div id="content">
-    <h1>Sample Text</h1>
-    <p>TEXT, Text!</p>
-    <button onClick="printSomeThing();" class="buttonBlack">Button</button>
-    <a href="#" class="buttonBlack"><span></span>Button as LINK</a>
+<!--<div id="content">
+    <h1>Oh! Noch mehr Text wie kann das sein?</h1>
+        <img id="myImg" src="image_red.jpg" alt="red" style="width:100%;max-width:100%" onClick="changeImage();"><br>
     <p>&nbsp;</p>
+</div>-->
+
+<div id="content">
+    <div id="bilder">
+        <img src="image_red.jpg" style="width:100%;max-width:100%" id="bild1">
+        <img src="anderesBild.jpg" style="width:100%;max-width:100%;display:none" id="bild2">
+    </div>
+    <button id="changeImage">Bilder tauschen</button>
 </div>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+  <script>
+        $('#changeImage').click(function(){
+            //$('#bilder').find('img').toggle();
+            $('#bild1').toggle();
+            $('#bild2').toggle();
+        });
+  </script>
 
 </body>
 </html>
